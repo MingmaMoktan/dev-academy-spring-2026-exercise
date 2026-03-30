@@ -1,0 +1,31 @@
+# --- Credentials and Secrets ---
+.env
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- Data (The Electricity Dataset) ---
+# It is best practice to keep large CSVs out of Git
+*.csv
+*.json
+*.sql
+!example_data.csv  # Optional: keep a tiny sample file if needed
+
+# --- Docker ---
+.dockerignore
+# (Keep your docker-compose.yml, but ignore specific local data volumes)
+postgres_data/
+
+# --- IDEs ---
+.vscode/
+.idea/
+.DS_Store (Mac)
